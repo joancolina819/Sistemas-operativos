@@ -1,0 +1,61 @@
+C:\Users\Joan David\Documents\PowerShell_transcript.DESKTOP-J2H83EP.ao6GfUZv.20
+200129094047.txt
+
+Stop-transcript
+
+1. Verifique si existen cmdlets que permitan convertir la salida de otro cmdlet a formato HTML.
+R// ConvertTo-Html
+
+2. Verifique cuáles cmdlets permiten dirigir la salida hacia una impresora, o hacia un archivo.
+R/
+Out-Printer                       Cmdlet    Microsoft.PowerShell.U... Sends output to a printer. 
+     
+3.Verifique cuántos cmdlets sirven para gestionar procesos.
+R// 
+Enter-PSHostProcess               Cmdlet    Microsoft.PowerShell.Core Connects to and enters into an interactive session with a lo...
+Exit-PSHostProcess                Cmdlet    Microsoft.PowerShell.Core Closes an interactive session with a local process.            
+Get-PSHostProcessInfo             Cmdlet    Microsoft.PowerShell.Core                                                                
+Debug-Process                     Cmdlet    Microsoft.PowerShell.M... Debugs one or more processes running on the local computer.    
+Get-Process                       Cmdlet    Microsoft.PowerShell.M... Gets the processes that are running on the local computer or...
+Start-Process                     Cmdlet    Microsoft.PowerShell.M... Starts one or more processes on the local computer.            
+Stop-Process                      Cmdlet    Microsoft.PowerShell.M... Stops one or more running processes.                           
+Wait-Process                      Cmdlet    Microsoft.PowerShell.M... Waits for the processes to be stopped before accepting more ...                                                 
+Get-ComputeProcess                Cmdlet    HostComputeService        Get-ComputeProcess...                                          
+Stop-ComputeProcess               Cmdlet    HostComputeService        Stop-ComputeProcess...                                         
+Get-VMProcessor                   Cmdlet    Hyper-V                   Get-VMProcessor...                                             
+Set-VMProcessor                   Cmdlet    Hyper-V                   Set-VMProcessor...                                             
+ConvertTo-ProcessMitigationPolicy Cmdlet    ProcessMitigations        ConvertTo-ProcessMitigationPolicy...                           
+Get-ProcessMitigation             Cmdlet    ProcessMitigations        Get-ProcessMitigation...                                       
+Set-ProcessMitigation 
+
+
+4.Cuál cmdlet podría usarse para escribir una entrada en un log de eventos?
+R/
+New-EventLog                      Cmdlet    Microsoft.PowerShell.M... Creates a new event log and a new event source on a local or...
+
+5.Cuáles cmdlets pueden emplearse para gestionar alias?
+R/
+Export-Alias                      Cmdlet    Microsoft.PowerShell.U... Exports information about currently defined aliases to a file. 
+Get-Alias                         Cmdlet    Microsoft.PowerShell.U... Gets the aliases for the current session.                      
+Import-Alias                      Cmdlet    Microsoft.PowerShell.U... Imports an alias list from a file.                             
+New-Alias                         Cmdlet    Microsoft.PowerShell.U... Creates a new alias.                                           
+Set-Alias                         Cmdlet    Microsoft.PowerShell.U... Creates or changes an alias for a cmdlet or other command el...
+Alias                             Provider  Microsoft.PowerShell.Core Provides access to the Windows PowerShell aliases and the va...
+about_Aliases                     HelpFile                            Describes how to use alternate names for cmdlets and command...
+
+6. Hay alguna manera de llevar un registro (transcript) de una sesión de Powershell, y de grabar dicho registro en un archivo?
+R/ 
+Start-Transcript                  Cmdlet    Microsoft.PowerShell.Host Creates a record of all or part of a Windows PowerShell sess...
+Stop-Transcript                   Cmdlet    Microsoft.PowerShell.Host Stops a transcript.  
+
+7.Cómo se pueden obtener los 100 registros más recientes del log de eventos SECURITY del sistema?
+R/
+
+8. Existe alguna manera de obtener la lista de los servicios que se están ejecutando en un computador remoto?
+
+9. Existe alguna manera de obtener la lista de procesos de un computador remoto?
+
+10. Revise la ayuda del cmdlet Out-File. Cuál es el tamaño de línea que emplea este cmdlet por omisión? Existe algún parámetro que permita cambiar dicho tamaño?
+
+11.Por omisión, Out-File sobreescribe el archivo de salida, en caso de que exista. Existe algún parámetro que impida la sobreescritura de un archivo existente?
+
